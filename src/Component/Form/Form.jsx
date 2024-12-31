@@ -98,7 +98,7 @@ return(
             />
             Other
 
-        <label for="lang"> Your Best Subject </label>
+        <label for="lang"> Your Best Subject* </label>
         <input type="checkbox" name="lang" id="english" checked={subjects.english === true}
                         onChange={(e) =>
                             handleSubjectChange("english")
@@ -117,7 +117,7 @@ return(
                         }
         />
         Physics
-        <label>Select Your Choice</label>
+        <label>Select Your Choice*</label>
         <select name="select" id="select" value={selectedOption}
               onChange={(e) => setSelectedOption( e.target.value) } >
               
@@ -140,7 +140,7 @@ return(
         <input type="file" name="file" id="file" 
         onChange={(e)=> setResume(e.target.files[0])} placeholder="Upload File" required />
         
-        <label for="message">Meesage</label>
+        <label for="message">Meesage*</label>
         <textarea name="message" id="message" cols="30" rows="5" 
         onChange={(e)=> setMessage(e.target.value) } 
         placeholder="Write down message!" required
